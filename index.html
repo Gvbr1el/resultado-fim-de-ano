@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <script>
+        function resultado(){
+            var nota1 = prompt("Qual foi sua primeira nota?");
+            var nota2 = prompt("Qual foi sua segunda nota?");
+
+            nota1 = parseFloat(nota1);
+            nota2 = parseFloat(nota2);
+
+            var media = (nota1 + nota2) / 2;
+            
+            if(media >= 8.00){
+                alert("Aprovado! Parabéns, você ficou acima da média!");
+            }
+            else if(media >= 7.00 && media < 8.00){
+                alert("Aprovado! Mas foi raspando hein... Precisa estudar mais!");
+            }
+            else{
+                alert("Reprovado! Infelizmente vvocê não conseguiu, vai ter que melhorar para o ano que vem!");
+            }
+        }
+
+        resultado();
+    </script>
+</body>
+</html>
